@@ -11,13 +11,13 @@
   grid.classList.add('grid');
 
  //create 2x2 grid
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 20; i++) {
     let row = document.createElement('div');
     //adding class to each row, 'row'
     row.classList.add('row')
     grid.appendChild(row);
 
-    for (let j = 0; j < 4; j++) {
+    for (let j = 0; j < 30; j++) {
       var column = document.createElement('div');
       //adding class to each div within each row, 'column'
       column.setAttribute('id', 'column');
@@ -28,20 +28,6 @@
 
   pixels.appendChild(grid);
 
-  //add eventlistener for palette colors
-
-  // body.addEventListener('click', function() {
-  //   let color = event.target.classList[1];
-  //   console.log(color);
-  // });
-  //
-  // //add event listener so when click on div, square turns red
-  // grid.addEventListener('click', function() {
-  //   if (event.target.className === 'column') {
-  //     event.target.style.backgroundColor = 'red';
-  //   }
-  // });
-
  let body = document.getElementsByTagName('body')[0];
 
  let color = '';
@@ -49,13 +35,14 @@
  body.addEventListener('click', function() {
   if (event.target.classList[0] === 'paint') {
     color = event.target.classList[1];
-    console.log(event.target.classList);
+    colorIndicator.className = color;
   } if (event.target.hasAttribute('id', 'column')) {
       event.target.className = color;
   }
  });
 
-
+  let colorIndicator = document.getElementById('colorIndicator');
+  console.log(colorIndicator);
 
 
 })();

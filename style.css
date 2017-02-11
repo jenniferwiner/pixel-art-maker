@@ -1,65 +1,220 @@
-.body {
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  /*border: solid black 1px;*/
 
 }
-.grid {
 
+h1 {
+  font-family: 'Barrio', cursive;
+  text-align: center;
+  margin-bottom: -21px;
+
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.content {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.grid {
 }
 
 .pixels {
-  height: 108px;
-  width: 416px;
+  padding-left: 20px;
+  margin: auto;
+  display: inline;
+  float: left;
+
 }
 
 .row {
-  column-count: 4;
+  column-count: 30;
   column-gap: 0;
-  height: 27px;
-  width: 104px;
+  height: 22px;
+  width: 660px;
   margin: -1px;
 }
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
 
 #column {
-  border: solid black 1px;
-  height: 25px;
-  width: 25px;
-  float: left;
-}
-
-.colors {
-  column-count: 2;
-  column-gap: 0;
-  /*height: 9px;*/
-  width: 42px;
-  padding-top: 50px;
-}
-
-.palette {
-  column-count: 2;
-  column-gap: 0;
-  height: 24px;
-  width: 42px;
-  margin: 0;
-  padding-top: 50px;
-
-
-}
-
-.paint {
-  border: solid black 1px;
+  border: solid #D3D3D3 1px;
   height: 20px;
   width: 20px;
 }
 
+/*.colors {
+  column-count: 2;
+  column-gap: 0;
+  height: 9px;
+  width: 42px;
+  padding-top: 50px;
+}*/
 
+.palette {
+  display: inline-block;
+  float: left;
+  margin-left: 100px;
+}
+
+.rainbow, .pastels, .fun, .bright, .Grey-Scale {
+  column-count: 7;
+  column-gap: 5px;
+  height: 22px;
+  width: 184px;
+}
+
+.paint, #colorIndicator {
+  border: solid black 1px;
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+footer {
+  padding-top: 30px;
+  font-family: cursive;
+  display: block;
+  clear: both;
+}
+
+footer h3{
+  font-family: "Caveat Brush", cursive;
+}
+
+/*Rainbow Colors*/
 .red {
-  background-color: #FF0000;
+  background: #FF0000;
+}
+
+.organge {
+  background: orange;
+}
+
+.yellow {
+  background: #FFFF00;
+}
+
+.green {
+  background: green;
 }
 
 .blue {
-  background-color: #00abff;
+  background: #00abff;
+}
+
+.indigo {
+  background: indigo;
+}
+
+.violet {
+  background: violet;
+}
+
+/*Pastels*/
+
+.pastel1 {
+  background: #437076;
+}
+.pastel2 {
+  background: #6C9C9E;
+}
+.pastel3 {
+  background: #92C7C1;
+}
+
+.pastel4 {
+  background: #BEC6C8;
+}
+
+.pastel5 {
+ background: #F3CEC8;
+}
+.pastel6 {
+  background: #F4A69A;
+}
+.pastel7 {
+  background: #cc6a5b;
+}
+
+/*Bright Colors*/
+.bright1{
+  background: #2C86C7;
+}
+.bright2{
+  background: #f5c423;
+}
+.bright3{
+  background: #eb5400;
+}
+.bright4{
+  background: #E8007A;
+}
+.bright5{
+  background: #77A625;
+}
+.bright6{
+  background: #9E1AAB;
+}
+.bright7{
+  background: #C3E7F4;
+}
+
+/*Gray-Scale*/
+.gray1 {
+  background: #FFFFFF;
+}
+.gray2 {
+  background: #C3C3C3;
+}
+.gray3 {
+  background: #8D8D8D;
+}
+.gray4 {
+  background: #555555;
+}
+.gray5 {
+  background: #383838;
+}
+.gray6 {
+  background: #1C1C1C;
+}
+.gray7 {
+  background: black;
+}
+
+/*Fun images*/
+
+.fun1 {
+  background-image: url('images/fish.png');
+  background-size: cover;
+}
+.fun2 {
+  background-image: url('images/smileyface.png');
+  background-size: cover;
+}
+.fun3 {
+  background-image: url('images/heart.png');
+  background-size: cover;
+}
+.fun4 {
+  background-image: url('images/thumbsup.png');
+  background-size: cover;
+}
+.fun5 {
+  background-image: url('images/flower.png');
+  background-size: cover;
+}
+.fun6 {
+  background-image: url('images/rainbow.png');
+  background-size: cover;
+}
+
+.fun7{
+  background-image: url('images/americanflag.png');
+  background-size: cover;
 }
