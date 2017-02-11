@@ -1,0 +1,65 @@
+.body {
+
+}
+.grid {
+
+}
+
+.pixels {
+  height: 108px;
+  width: 416px;
+}
+
+.row {
+  column-count: 4;
+  column-gap: 0;
+  height: 27px;
+  width: 104px;
+  margin: -1px;
+}
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+#column {
+  border: solid black 1px;
+  height: 25px;
+  width: 25px;
+  float: left;
+}
+
+.colors {
+  column-count: 2;
+  column-gap: 0;
+  /*height: 9px;*/
+  width: 42px;
+  padding-top: 50px;
+}
+
+.palette {
+  column-count: 2;
+  column-gap: 0;
+  height: 24px;
+  width: 42px;
+  margin: 0;
+  padding-top: 50px;
+
+
+}
+
+.paint {
+  border: solid black 1px;
+  height: 20px;
+  width: 20px;
+}
+
+
+.red {
+  background-color: #FF0000;
+}
+
+.blue {
+  background-color: #00abff;
+}
