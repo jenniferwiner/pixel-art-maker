@@ -1,7 +1,5 @@
 * {
   font-family: 'Roboto Condensed', sans-serif;
-  /*border: solid black 1px;*/
-
 }
 
 h1 {
@@ -23,9 +21,6 @@ h3 {
 
 }
 
-.grid {
-}
-
 .pixels {
   padding-left: 20px;
   padding-right: 20px;
@@ -40,7 +35,7 @@ h3 {
   margin: -1px;
 }
 
-#column {
+.column {
   border: solid #D3D3D3 1px;
   height: 20px;
   width: 20px;
@@ -49,10 +44,11 @@ h3 {
 .palette {
   display: inline-block;
   float: none;
-  /*position: relative;*/
+  margin-top: -20px;
   vertical-align: top;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 15px;
 
 }
 
